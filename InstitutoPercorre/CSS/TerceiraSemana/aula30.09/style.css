@@ -1,0 +1,66 @@
+ :root {
+     --cor-laranja: #ea8676;
+     --cor-laranjaAvermelhado: #d24858;
+     --cor-bege: #fdeecd;
+     --cor-verde: #275223;
+     --cor-verdeClaro: #a9dfa5;
+ }
+
+ body {
+     height: 100dvh;
+     margin: 0;
+ }
+
+ * {
+     font-family: "cooper-black-std", serif;
+     color: beige;
+     text-shadow: 1px 2px var(--cor-sombraText);
+ }
+
+
+ #container {
+     display: grid;
+     background-color: var(--cor-bege);
+     height: 100dvh;
+     border: 5px solid var(--cor-laranjaAvermelhado);
+     gap: 10px;
+     padding: 10px;
+
+     grid-template-rows: 1fr 1fr 1fr;
+     grid-template-columns: repeat(3, 1fr);
+
+
+ }
+
+ .box {
+     padding: 4px;
+     border: 1px solid black;
+
+ }
+
+ #nome1 {
+     background-color: var(--cor-laranjaAvermelhado);
+     grid-column-start: 1;
+     grid-column-end: 4;
+     grid-row-start: 1;
+     grid-row-end: 2;
+
+ }
+
+ #nome2 {
+     background-color: #275223;
+     grid-column: 1/ 3;
+     grid-row: 2/ 3;
+ }
+
+ #nome3 {
+     background-color: var(--cor-laranja);
+     grid-column: 3/ 4;
+     grid-row: 2/ 3;
+ }
+
+ #nome4 {
+     background-color: var(--cor-verdeClaro);
+     grid-column: 1/ 4;
+     grid-row: 3/ 4;
+ }
